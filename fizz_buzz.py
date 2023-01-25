@@ -1,14 +1,16 @@
-def fizz_buzz(list)
+def fizz_buzz(list):
     for num in nums:
-        if (num % 3 == 0):
-            print('Fizz')
-        if (num % 5 == 0):
-            print('Buzz')
-        if (num % 3 != 0) and (num % 3 != 0):
-            print('Fizz Buzz!')
+        if (num % 3 == 0) and (num % 5 == 0):
+            print('Fizz Buzz', num)
+            continue
+        elif (num % 3 == 0):
+            print('Fizz', num)
+            continue
+        elif (num % 5 == 0):
+            print('Buzz', num)
+            
         
+    
 
-
-
-
-nums = [1,4,6,14,15,12,25,30,45,71,77,264,180,75,199,1560]
+nums = [1,4,6,12,15,25,60,30,39,40,45,63,72,77,264,180,75,199,1560]
+fizz_buzz(nums)
